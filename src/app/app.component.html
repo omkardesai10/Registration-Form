@@ -2,8 +2,6 @@
   <h2>Registration Form</h2>
   <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
 
-    {{registrationForm.value | json}}
-
     <div class="form-group mb-3">
       <label>Username</label>
       <input [class.is-invalid]="userName!.invalid && userName!.touched" formControlName="userName" type="text" class="form-control">
